@@ -1,0 +1,131 @@
+$barheight: 40px;
+$color1: #4e89ae;
+$color2: #43658b;
+$color3: #ed6663;
+$color4: #ffa372;
+
+$hovercolor: #444;
+
+@mixin circlecenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    margin: 0;
+    background-color: #e2eff1;
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background: #8ccff7;
+    width: 100%;
+}
+
+.header img{
+    height: auto;
+    width: auto;
+    
+    display: block;
+    margin: auto;
+}
+
+.bars{
+    margin-top: 50px;
+}
+
+.bar1{
+    height: $barheight;
+    background-color: $color1;
+}
+
+.bar2{
+    height: $barheight;
+    background-color: $color2;
+}
+
+.bar3{
+    height: $barheight;
+    background-color: $color3;
+}
+
+.bar4{
+    height: $barheight;
+    background-color: $color4;
+}
+
+.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover {
+    background-color: $hovercolor;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.circle1{
+    height: 70px;
+    width: 70px;
+    background-color: $color1;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle2{
+    height: 80px;
+    width: 80px;
+    background-color: $color2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle3{
+    height: 90px;
+    width: 90px;
+    background-color: $color3;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle4{
+    height: 100px;
+    width: 100px;
+    background-color: $color4;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover{
+    background-color: $hovercolor;
+}
+
+footer{
+    justify-content: flex-end;    
+
+    height: 50px;
+    background-color: #8ccff7
+}
+
+@media (max-width: 800px){
+
+    .circles{
+        margin-top: 50px;
+        margin-bottom: 50px;
+       @include circlecenter()
+    }
+
+    .circle1,.circle2,.circle3,.circle4{
+        margin-top: 10px;
+    }
+}

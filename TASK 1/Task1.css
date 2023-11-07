@@ -1,0 +1,144 @@
+body {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+ }
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 1024px;
+}
+
+.logo{
+    padding: 20px;
+}
+
+.contentimg{
+    max-width: 35.2vh;
+}
+
+.text{
+    font-family: monospace;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+@media only screen and (max-width: 481px){
+
+    .contentimg{
+        float: left;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        margin: 0;
+        width: 5vh;
+        padding: 9px;
+    }
+
+    .text{
+        font-family: monospace;
+        font-size: 1rem;
+        margin-left: 1.3vh;
+        margin-right: 2.3vh;
+        line-height: 1.4;
+    }
+
+    footer{
+        font-family: monospace;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        max-width: 481px;
+    }
+    
+}
+
+@media only screen and (min-width: 482px){
+
+    .contentimg{
+        float: left;
+        max-width: 50%;
+        height: auto;
+    }
+    
+    .logo{
+        margin: 0;
+        width: 6vh;
+    }
+
+    .text{
+        font-family: monospace;
+        font-size: 1rem;
+        margin-left: 1.3vh;
+        margin-right: 2.3vh;
+        line-height: 1.4;
+    }
+
+    footer{
+        font-family: monospace;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1023px) {
+
+    body{
+        background-color: #f8f4f4;
+    }
+    .wrap{
+        width: 1024px;
+        margin: auto;
+        background-color: white;
+    }
+
+    .contentimg{
+        float: left;
+        max-width: 33.3%;
+        height: auto;
+    }
+    
+    .logo{
+        margin: 0;
+        padding: 16px;
+        width: 6vh;
+    }
+
+    .text{
+        font-family: monospace;
+        font-size: 1rem;
+        margin-left: 2.5vh;
+        margin-right: 2.7vh;
+        line-height: 1.4;
+    }
+
+    footer{
+        font-family: monospace;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+}
+
+
+

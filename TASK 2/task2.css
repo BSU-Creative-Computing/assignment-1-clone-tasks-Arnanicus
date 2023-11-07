@@ -1,0 +1,313 @@
+body{
+    margin: 0 auto;
+    background: #eeeeee;
+}
+
+.headertext{
+    font-size: 27.5px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    white-space: nowrap;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: -1px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #1e90ff;
+    margin-top: 0;
+    width: 100%;
+    height: 78px;
+}
+
+.searchbar{
+    
+    margin-left: 31.8vw;
+    margin-top: 23px;
+    margin-bottom: 19px;
+    background-color: white;
+    padding-left: 11px;
+    padding-top: 6px;
+    padding-right: 235px;
+    outline: gray 1px solid;
+
+    color: gray;
+    font-size: 17px;
+    font-family: 'Titillium Web', sans-serif;;
+}
+
+.navlink{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li{
+    font-size: 15.5px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 19px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 400;
+}
+
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 72vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+
+.mainmovie{
+    box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.30);
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    margin-right: 10px;
+
+}
+
+.mainmovie h2{
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+
+}
+
+.avengerstext{
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 400;
+    font-size: 15.5px;
+    margin-top: -12px;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+.mainmovie img{ 
+    height: 100%;
+    width: 100%;
+}
+
+.mainbutton{
+    float: right;
+    font-size: 1.5vh;
+    width: 7.4vh;
+    color: white;
+    background: #1e90ff;
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 400;
+    border-radius: 3px;
+
+    padding: 6px 10px 6px 10px;
+    margin-right: 15px;
+    margin-top: 32px;
+
+}
+
+.submovies{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.submovcontainer img{
+    max-width: 100%;
+    max-height: 65.5%;
+    padding: 0px;
+}
+
+.submovcontainer{
+
+    box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.30);
+        background-color: white;
+
+
+    height: 59.7vh;
+    width: 15vw;
+    
+    margin: 5px 15px 15px 5px ;
+    padding: 10px 10px 10px 10px ;
+
+    position:relative;
+
+}
+
+.submovies h2{
+    margin: 0 auto;
+    margin-left: 5px;
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -1px;
+
+}
+
+.submovtext{
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 400;
+    font-size: 15.5px;
+    margin-top: 1px;
+
+    margin-left: 5px;
+}
+
+.subbutton{
+    float: right;
+    font-size: 1.5vh;
+    color: white;
+    width: 7.4vh;
+    background: #1e90ff;
+    font-family: 'Titillium Web', sans-serif;;
+    font-weight: 400;
+    border-radius: 3px;
+
+    padding: 6px 10px 6px 10px;
+    margin-right: 15px;
+
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 60px;
+
+    font-family: 'Titillium Web', sans-serif;;
+    
+}
+
+@media (max-width: 1500px){
+
+    .submovcontainer{
+        width: 14.3vw;
+    }
+
+}
+
+
+@media (max-width: 1280px){
+    
+    .main{
+        width: 90vw;
+    }
+
+    .submovcontainer{
+        width: 16.3vw;
+    }
+
+
+    .searchbar{
+        margin-left: 29.8vw;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .main{
+        overflow: hidden;
+        width: 94vw;
+    }
+
+    .mainmovie img{
+        height: auto;
+        width: 100%;
+    }
+
+    .submovies{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submovies img{
+        height: auto;
+        width: 100%;
+    }
+
+    .submovcontainer{
+        padding: 10px;
+        width: 26.3vw;
+    }
+
+    .searchbar{
+        margin-left: 22.8vw;
+    }
+}
+
+@media (max-width: 899px){
+
+    .main{
+        width: 94vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submovies{
+        flex-direction: row;
+    }
+
+    .submovcontainer{
+        margin-top: 20px;
+        padding: 10px;
+        width: 41.8vw;
+        height: 80vh;
+    }
+
+    .submovcontainer img{
+        padding: 5px;
+        width: 41vw;
+        height: 100%;
+    }
+
+    .searchbar{
+        display: none;
+    }
+}
+
+@media (max-width: 481px){
+
+    .submovcontainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .submovcontainer img{
+        padding: 5px;
+        width: auto;
+        height: auto;
+    }
+
+    .submovtext{
+        font-size: 17px;
+        padding-bottom: 70px;
+    }
+
+    .searchbar{
+        display: none;
+    }
+}
