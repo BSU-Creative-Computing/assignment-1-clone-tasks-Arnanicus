@@ -7,7 +7,7 @@ body {
     bottom: 0;
  }
 
-.wrap{
+.wrap{ /* keeps content in the center aside from the logo. */
     display: flex;
     flex-direction: column;
     align-content: center;

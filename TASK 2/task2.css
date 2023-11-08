@@ -23,7 +23,7 @@ body{
     height: 78px;
 }
 
-.searchbar{
+.searchbar{ /* search bar wouldn't center, opted to keep as close to the middle as possible */
     
     margin-left: 31.8vw;
     margin-top: 23px;
@@ -201,7 +201,7 @@ footer{
     
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1500px){ /* media queries adjust the elements to follow the targets as much as possible */
 
     .submovcontainer{
         width: 14.3vw;

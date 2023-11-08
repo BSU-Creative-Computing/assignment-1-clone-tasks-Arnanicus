@@ -2,11 +2,11 @@ $barheight: 40px;
 $color1: #4e89ae;
 $color2: #43658b;
 $color3: #ed6663;
-$color4: #ffa372;
+$color4: #ffa372; /* colors are separated for convenience, bar and circle use same colors. */
 
 $hovercolor: #444;
 
-@mixin circlecenter {
+@mixin circlecenter { /* to center solely the circles, as the bars align themsleves initially. */
     display: flex;
     flex-direction: column;
     justify-content: center;
